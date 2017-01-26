@@ -32,7 +32,9 @@ Plug 'xolox/vim-misc'
 
 call plug#end()
 
+
 autocmd BufNewFile, BufReadPost *.md set filetype=markdown
+autocmd BufNewFile, BufReadPost *.md set syntax=markdown 
 
 "
 " mappings 
