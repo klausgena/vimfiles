@@ -53,8 +53,6 @@ nnoremap <leader>pdf :! pandoc -N --template="C:\Users\Lenovo T420\Dropbox\Schri
 
 " folding in markdown uitschakelen
 
-let g:vim_markdown_folding_disabled = 1
-
 " navigatie tussen splits
 
 nnoremap <C-J> <C-W><C-J>
