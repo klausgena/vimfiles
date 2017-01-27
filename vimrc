@@ -26,9 +26,10 @@ Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
 Plug 'easymotion/vim-easymotion'
 Plug 'baskerville/bubblegum'
-Plug 'vim-pandoc/vim-pandoc'
-Plug 'xolox/vim-shell'
-Plug 'xolox/vim-misc'
+Plug 'vim-pandoc/vim-pandoc' 
+Plug 'xolox/vim-shell' 
+Plug 'xolox/vim-misc' 
+Plug 'VOoM'
 
 call plug#end()
 
