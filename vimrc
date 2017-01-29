@@ -4,6 +4,7 @@ setlocal wrapmargin=10
 set title 
 set spell spelllang=nl
 set noerrorbells visualbell t_vb=
+set number
 
 call plug#begin() 
 
@@ -28,6 +29,7 @@ Plug 'xolox/vim-misc'
 Plug 'VOoM'
 Plug 'pangloss/vim-javascript', {'for': ['javascript', 'JSX']}
 Plug 'mxw/vim-jsx', {'for': ['javascript', 'JSX']}
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
