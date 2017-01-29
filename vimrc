@@ -3,6 +3,7 @@ set fileencoding=utf-8
 setlocal wrapmargin=10
 set title 
 set spell spelllang=nl
+set noerrorbells visualbell t_vb=
 
 call plug#begin() 
 
@@ -34,7 +35,7 @@ call plug#end()
 
 augroup pencil
 	autocmd!
-	autocmd FileType markdown, mkd, text call pencil#init({'wrap': 'hard'})
+	autocmd FileType markdown,mkd,text call pencil#init({'wrap': 'hard'})
 				\ | call textobj#quote#init()
 				\ | call textobj#sentence#init()
 augroup END
