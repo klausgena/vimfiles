@@ -26,6 +26,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'baskerville/bubblegum'
 Plug 'xolox/vim-shell' 
 Plug 'xolox/vim-misc' 
+Plug 'xolox/vim-session'
 Plug 'VOoM'
 Plug 'pangloss/vim-javascript', {'for': ['javascript', 'JSX']}
 Plug 'mxw/vim-jsx', {'for': ['javascript', 'JSX']}
