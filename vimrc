@@ -17,7 +17,8 @@ Plug 'reedes/vim-textobj-sentence', {'for': ['text', 'markdown']}
 Plug 'reedes/vim-colors-pencil', {'for': ['text', 'markdown']} 
 Plug 'junegunn/goyo.vim', {'for': ['text', 'markdown']} 
 Plug 'junegunn/limelight.vim', {'for': ['text', 'markdown']} 
-Plug 'plasticboy/vim-markdown', {'for': ['text', 'markdown']} 
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'bling/vim-airline'
 Plug 'mhinz/vim-startify'
 Plug 'ervandew/supertab'
@@ -64,16 +65,16 @@ nnoremap <silent> Q gqap
 xnoremap <silent> Q gq
 nnoremap <silent> <leader>Q vapJgqap
 
-" markdown omzetten in pdf
-
-nnoremap <leader>pdf :! pandoc -N --template="C:\Users\Lenovo T420\Dropbox\Schrijfsels\template.tex" % --latex-engine=xelatex -t latex -o %:r.pdf
-
 " navigatie tussen splits
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" NERDtree openen met ,ne
+
+nmap <leader>ne :NERDTree<cr>
 
 " specifiek voor javascript
 
