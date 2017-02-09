@@ -39,6 +39,7 @@ Plug 'VOoM'
 Plug 'pangloss/vim-javascript', {'for': ['javascript', 'JSX']}
 Plug 'mxw/vim-jsx', {'for': ['javascript', 'JSX']}
 Plug 'tpope/vim-fugitive'
+Plug 'Townk/vim-autoclose'
 
 call plug#end()
 
