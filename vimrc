@@ -31,6 +31,7 @@ Plug 'xolox/vim-session'
 Plug 'VOoM'
 Plug 'pangloss/vim-javascript', {'for': ['javascript', 'JSX']}
 Plug 'mxw/vim-jsx', {'for': ['javascript', 'JSX']}
+Plug 'moll/vim-node'
 Plug 'tpope/vim-fugitive'
 
 call plug#end()
