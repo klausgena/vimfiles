@@ -6,6 +6,13 @@ set spell spelllang=nl
 set noerrorbells visualbell t_vb=
 set number
 
+" Russisch
+
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+highlight lCursor guifg=NONE guibg=Cyan
+
 call plug#begin() 
 
 Plug 'tpope/vim-sensible' 
@@ -33,6 +40,7 @@ Plug 'pangloss/vim-javascript', {'for': ['javascript', 'JSX']}
 Plug 'mxw/vim-jsx', {'for': ['javascript', 'JSX']}
 Plug 'moll/vim-node'
 Plug 'tpope/vim-fugitive'
+Plug 'Townk/vim-autoclose'
 
 call plug#end()
 
@@ -75,7 +83,7 @@ nnoremap <C-H> <C-W><C-H>
 
 " NERDtree openen met ,ne
 
-nmap <leader>ne :NERDTree<cr>
+nmap <leader>ne :NERDTreeFromBookmark
 
 " specifiek voor javascript
 
