@@ -30,6 +30,7 @@ Plug 'bling/vim-airline'
 Plug 'mhinz/vim-startify'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
 Plug 'easymotion/vim-easymotion'
 Plug 'baskerville/bubblegum'
 Plug 'xolox/vim-shell' 
@@ -89,6 +90,11 @@ nmap <leader>ne :NERDTreeFromBookmark
 
 let g:jsx_ext_required = 0 "jsx mogelijk in js files
 
+" use jshint
+
+let g:syntastic_javascript_checkers = ['jshint']
+let g:javascript_check_on_open = 1
+
 " alle toolbars en menu's verwijderen
 
 set guioptions-=m  "remove menu bar 
@@ -98,4 +104,5 @@ set guioptions-=L  "remove left-hand scroll bar
 
 " themes en fonts
 
-set guifont=Consolas:h13
+let g:airline_powerline_fonts = 1
+set guifont=SauceCodePro_NF:h12
