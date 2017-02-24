@@ -5,6 +5,7 @@ set title
 set spell spelllang=nl
 set noerrorbells visualbell t_vb=
 set number
+set showtabline=2 
 
 " Russisch
 
@@ -83,6 +84,7 @@ nnoremap <C-H> <C-W><C-H>
 " NERDtree openen met ,ne
 
 nmap <leader>ne :NERDTreeFromBookmark
+nmap <leader>n :NERDTreeToggle<cr>
 
 " specifiek voor javascript
 
@@ -97,4 +99,14 @@ set guioptions-=L  "remove left-hand scroll bar
 
 " themes en fonts
 
-set guifont=Consolas:h13
+let g:thematic#themes = { 
+\ 'pencil' : {'typeface': 'Consolas',
+\             'font-size': 13,
+\             'linespace': 8
+\            },
+\ 'bubblegum' : {
+\ 		'typeface': 'Consolas',
+\               'font-size': 12,
+\               'linespace': 2
+\            },
+\}
