@@ -1,6 +1,6 @@
 " ~\vimfiles\sessions\Geweer.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 06 februari 2017 at 22:51:20.
+" Created by session.vim 2.13.1 on 07 februari 2017 at 13:14:02.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=gte
@@ -19,32 +19,28 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/
+cd ~\Dropbox\Schrijfsels\De\ Chekhov\ gun\NOTAS
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +5 Dropbox\Schrijfsels\De\ Chekhov\ gun\NOTAS\blob.md
-badd +0 Dropbox\Schrijfsels\De\ Chekhov\ gun\NOTAS\samenvatting.md
+badd +1 blob.md
+badd +1 samenvatting.md
 argglobal
 silent! argdel *
 set stal=2
-edit Dropbox\Schrijfsels\De\ Chekhov\ gun\NOTAS\blob.md
+edit blob.md
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
-wincmd _ | wincmd |
-vsplit
-2wincmd h
-wincmd w
+1wincmd h
 wincmd w
 set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 21 + 56) / 113)
-exe 'vert 2resize ' . ((&columns * 27 + 56) / 113)
-exe 'vert 3resize ' . ((&columns * 63 + 56) / 113)
+exe 'vert 1resize ' . ((&columns * 18 + 56) / 113)
+exe 'vert 2resize ' . ((&columns * 94 + 56) / 113)
 argglobal
 enew
 " file NERD_tree_1
@@ -56,20 +52,6 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal nofen
-lcd ~\Dropbox\Schrijfsels\De\ Chekhov\ gun\NOTAS
-wincmd w
-argglobal
-enew
-file ~\Dropbox\Schrijfsels\De\ Chekhov\ gun\NOTAS\blob.md_VOOM2
-setlocal fdm=expr
-setlocal fde=voom#TreeFoldexpr(v:lnum)
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=2
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-lcd ~\Dropbox\Schrijfsels\De\ Chekhov\ gun\NOTAS
 wincmd w
 argglobal
 setlocal fdm=expr
@@ -102,21 +84,19 @@ silent! normal! zo
 silent! normal! zo
 69
 silent! normal! zo
-71
+73
 silent! normal! zo
-75
-silent! normal! zo
-let s:l = 25 - ((9 * winheight(0) + 13) / 26)
+let s:l = 25 - ((1 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 25
-normal! 086|
+normal! 070|
 lcd ~\Dropbox\Schrijfsels\De\ Chekhov\ gun\NOTAS
 wincmd w
-exe 'vert 1resize ' . ((&columns * 21 + 56) / 113)
-exe 'vert 2resize ' . ((&columns * 27 + 56) / 113)
-exe 'vert 3resize ' . ((&columns * 63 + 56) / 113)
+2wincmd w
+exe 'vert 1resize ' . ((&columns * 18 + 56) / 113)
+exe 'vert 2resize ' . ((&columns * 94 + 56) / 113)
 tabedit ~\Dropbox\Schrijfsels\De\ Chekhov\ gun\NOTAS\samenvatting.md
 set splitbelow splitright
 set nosplitbelow
@@ -132,14 +112,22 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+1
+silent! normal! zo
+6
+silent! normal! zo
+11
+silent! normal! zo
+15
+silent! normal! zo
 let s:l = 1 - ((0 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
-normal! 0
+normal! 015|
 lcd ~\Dropbox\Schrijfsels\De\ Chekhov\ gun\NOTAS
-tabnext 2
+tabnext 1
 set stal=1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
@@ -168,9 +156,9 @@ if !getbufvar(s:bufnr_save, '&modified')
   endif
 endif
 execute "cd" fnameescape(s:cwd_save)
-1resize 25|vert 1resize 21|2resize 25|vert 2resize 27|3resize 25|vert 3resize 63|
-1wincmd w
-tabnext 2
+1resize 25|vert 1resize 18|2resize 25|vert 2resize 94|
+2wincmd w
+tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

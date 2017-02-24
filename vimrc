@@ -31,6 +31,7 @@ Plug 'bling/vim-airline'
 Plug 'mhinz/vim-startify'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
 Plug 'easymotion/vim-easymotion'
 Plug 'baskerville/bubblegum'
 Plug 'xolox/vim-shell' 
@@ -39,6 +40,7 @@ Plug 'xolox/vim-session'
 Plug 'VOoM'
 Plug 'pangloss/vim-javascript', {'for': ['javascript', 'JSX']}
 Plug 'mxw/vim-jsx', {'for': ['javascript', 'JSX']}
+Plug 'moll/vim-node'
 Plug 'tpope/vim-fugitive'
 Plug 'Townk/vim-autoclose'
 
@@ -90,6 +92,11 @@ nmap <leader>n :NERDTreeToggle<cr>
 
 let g:jsx_ext_required = 0 "jsx mogelijk in js files
 
+" use jshint
+
+let g:syntastic_javascript_checkers = ['jshint']
+let g:javascript_check_on_open = 1
+
 " alle toolbars en menu's verwijderen
 
 set guioptions-=m  "remove menu bar 
@@ -110,3 +117,6 @@ let g:thematic#themes = {
 \               'linespace': 2
 \            },
 \}
+
+let g:airline_powerline_fonts = 1
+set guifont=SauceCodePro_NF:h12
