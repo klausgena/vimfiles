@@ -119,4 +119,4 @@ let g:thematic#themes = {
 \}
 
 let g:airline_powerline_fonts = 1
-set guifont=SauceCodePro_NF:h12
+set guifont=Sauce_Code_Powerline:h11
