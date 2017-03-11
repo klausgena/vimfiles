@@ -43,6 +43,7 @@ Plug 'moll/vim-node'
 Plug 'tpope/vim-fugitive'
 Plug 'Townk/vim-autoclose'
 Plug 'digitaltoad/vim-pug', {'for': ['pug', 'jade']}
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
