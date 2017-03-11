@@ -42,6 +42,7 @@ Plug 'mxw/vim-jsx', {'for': ['javascript', 'JSX']}
 Plug 'moll/vim-node'
 Plug 'tpope/vim-fugitive'
 Plug 'Townk/vim-autoclose'
+Plug 'digitaltoad/vim-pug', {'for': ['pug', 'jade']}
 
 call plug#end()
 
