@@ -44,7 +44,6 @@ Plug 'moll/vim-node'
 Plug 'tpope/vim-fugitive'
 Plug 'Townk/vim-autoclose'
 Plug 'digitaltoad/vim-pug', {'for': ['pug', 'jade']}
-Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -65,7 +64,7 @@ autocmd BufNewFile, BufReadPost *.md set syntax=markdown
 "
 
 let mapleader = ","
-imap fj <esc>
+imap ff <esc>
 
 " van dubbele punt naar puntkomma
 
@@ -121,4 +120,4 @@ let g:thematic#themes = {
 \}
 
 let g:airline_powerline_fonts = 1
-set guifont=Sauce_Code_Powerline:h11
+set guifont=Sauce_Code_Powerline:h13
