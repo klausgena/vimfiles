@@ -51,20 +51,22 @@ call plug#end()
 
 augroup pencil
 	autocmd!
-	autocmd FileType markdown,mkd,text call pencil#init({'wrap': 'hard'})
-				\ | call textobj#quote#init()
-				\ | call textobj#sentence#init()
+	autocmd FileType markdown,mkd,md,text call pencil#init({'wrap': 'hard'})
 augroup END
 
 autocmd BufNewFile, BufReadPost *.md set filetype=markdown
 autocmd BufNewFile, BufReadPost *.md set syntax=markdown 
 
+
+" specifiek voor Markdown
+"
+let g:vim_markdown_folding_disabled = 1
 "
 " mappings 
 "
 
 let mapleader = ","
-imap ff <esc>
+imap jj <esc>
 
 " van dubbele punt naar puntkomma
 
@@ -108,16 +110,17 @@ set guioptions-=L  "remove left-hand scroll bar
 " themes en fonts
 
 let g:thematic#themes = { 
-\ 'pencil' : {'typeface': 'Consolas',
-\             'font-size': 13,
-\             'linespace': 8
+\ 'pencil' : {'typeface': 'Source_Code_Pro_Medium',
+\             'font-size': 14,
+\             'linespace': 8,
+\             'ruler': 1
 \            },
 \ 'bubblegum' : {
-\ 		'typeface': 'Consolas',
-\               'font-size': 12,
+\ 		'typeface': 'Source_Code_Pro_Medium',
+\               'font-size': 14,
 \               'linespace': 2
 \            },
 \}
 
 let g:airline_powerline_fonts = 1
-set guifont=SauceCodePro_NF:h14
+set guifont=Source_Code_Pro_Medium:h12
