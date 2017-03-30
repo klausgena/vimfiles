@@ -81,10 +81,8 @@ nnoremap <silent> <leader>Q vapJgqap
 
 " navigatie tussen splits
 
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <Tab> <c-w>w
+nnoremap <bs> <c-w>W
 
 " NERDtree openen met ,ne
 
