@@ -44,6 +44,7 @@ Plug 'moll/vim-node'
 Plug 'tpope/vim-fugitive'
 Plug 'Townk/vim-autoclose'
 Plug 'digitaltoad/vim-pug', {'for': ['pug', 'jade']}
+Plug 'plasticboy/vim-markdown', {'for': ['text', 'markdown']}
 
 call plug#end()
 
@@ -61,6 +62,7 @@ autocmd BufNewFile, BufReadPost *.md set syntax=markdown
 " specifiek voor Markdown
 "
 let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_toc_autofit = 1
 "
 " mappings 
 "
